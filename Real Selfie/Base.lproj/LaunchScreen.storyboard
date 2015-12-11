@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="BQP-Jq-91i">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aHm-vt-h17">
+            <objects>
+                <viewController id="BQP-Jq-91i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y7E-V5-E3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="xFo-iH-DDp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QgJ-zS-WhQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfie-logo" translatesAutoresizingMaskIntoConstraints="NO" id="6VO-1e-Atw">
+                                <rect key="frame" x="120" y="120" width="480" height="480"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6VO-1e-Atw" secondAttribute="height" multiplier="1:1" id="Jsi-yy-8hK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.98624199629999998" green="0.77968657019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6VO-1e-Atw" firstAttribute="height" secondItem="QgJ-zS-WhQ" secondAttribute="height" multiplier="80%" priority="750" id="47i-dA-UAs"/>
+                            <constraint firstItem="xFo-iH-DDp" firstAttribute="top" secondItem="6VO-1e-Atw" secondAttribute="bottom" id="KLa-UI-leh"/>
+                            <constraint firstItem="6VO-1e-Atw" firstAttribute="width" secondItem="QgJ-zS-WhQ" secondAttribute="width" multiplier="80%" id="OV1-Ke-TKa"/>
+                            <constraint firstItem="6VO-1e-Atw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y7E-V5-E3y" secondAttribute="bottom" constant="20" id="WwR-Au-6Dt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6VO-1e-Atw" secondAttribute="trailing" constant="-20" id="h4R-3n-Nht"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFT-r7-68p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selfie-logo" width="290" height="290"/>
+    </resources>
+</document>

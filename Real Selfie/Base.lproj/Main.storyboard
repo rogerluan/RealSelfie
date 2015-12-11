@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DAz-zS-axv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="KSn-xY-xFo">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" id="DAz-zS-axv" customClass="RSCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZAx-gY-ere"/>
+                        <viewControllerLayoutGuide type="bottom" id="ONg-77-Aed"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tP6-zn-SPV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mli-TP-i5m">
+                                <rect key="frame" x="558" y="558" width="22" height="22"/>
+                                <animations/>
+                                <color key="tintColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="displayTutorial:" destination="DAz-zS-axv" eventType="touchUpInside" id="2zb-XS-xa2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How The World Sees You" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyE-em-5Kf">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZyE-em-5Kf" secondAttribute="trailing" id="26r-JJ-ElL"/>
+                            <constraint firstItem="ONg-77-Aed" firstAttribute="top" secondItem="mli-TP-i5m" secondAttribute="bottom" constant="20" id="Nvi-7I-OSn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mli-TP-i5m" secondAttribute="trailing" id="aIb-FT-Ujd"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZyE-em-5Kf" secondAttribute="leading" id="wOc-94-F38"/>
+                            <constraint firstItem="ZyE-em-5Kf" firstAttribute="top" secondItem="ZAx-gY-ere" secondAttribute="bottom" id="xrw-EK-gw2"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Csz-De-ks6" appends="YES" id="wQ4-Jh-mXG"/>
+                            <outletCollection property="gestureRecognizers" destination="1zZ-DE-ppv" appends="YES" id="aGy-Q8-5Yc"/>
+                            <outletCollection property="gestureRecognizers" destination="EhX-y8-4fc" appends="YES" id="vNc-qS-rW3"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="cameraStatusLabel" destination="ZyE-em-5Kf" id="BzW-a9-qL6"/>
+                        <outlet property="horizontalSwipeGesture" destination="Csz-De-ks6" id="ZGy-Qg-3A1"/>
+                        <outlet property="swipeUpGesture" destination="1zZ-DE-ppv" id="TvY-Vu-FHY"/>
+                        <outlet property="tapGesture" destination="EhX-y8-4fc" id="7cU-wD-smV"/>
+                        <outlet property="tutorialButton" destination="mli-TP-i5m" id="FC0-Qb-FM8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKn-WK-2Lq" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Csz-De-ks6">
+                    <connections>
+                        <action selector="didHorizontalSwipe:" destination="DAz-zS-axv" id="D2h-PC-6aY"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="1zZ-DE-ppv">
+                    <connections>
+                        <action selector="didSwipeUp:" destination="DAz-zS-axv" id="Rtk-Xr-OoL"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer delaysTouchesEnded="NO" id="EhX-y8-4fc">
+                    <connections>
+                        <action selector="didTap:" destination="DAz-zS-axv" id="zWd-2b-crr"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="297" y="317"/>
+        </scene>
+        <!--Last Selfie View Controller-->
+        <scene sceneID="BeK-IC-DdF">
+            <objects>
+                <viewController storyboardIdentifier="lastSelfieVC" id="QdV-0F-a3S" customClass="RSLastSelfieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QsD-yo-GRC"/>
+                        <viewControllerLayoutGuide type="bottom" id="WTC-yF-6PG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bMc-qF-az0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNu-9O-sXx">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k9k-8U-cHn">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                        <animations/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P64-gb-5q5">
+                                        <rect key="frame" x="20" y="516" width="44" height="44"/>
+                                        <animations/>
+                                        <state key="normal" image="shareButton"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedShareButton:" destination="QdV-0F-a3S" eventType="touchUpInside" id="nxC-bc-G23"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scr-o1-IYq">
+                                        <rect key="frame" x="536" y="516" width="44" height="44"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="2sb-6p-gOx"/>
+                                            <constraint firstAttribute="width" constant="44" id="dMe-08-GnB"/>
+                                        </constraints>
+                                        <state key="normal" image="closeButton"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="0.0" height="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderIBColor">
+                                                <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tappedCloseButton:" destination="QdV-0F-a3S" eventType="touchUpInside" id="14X-Fk-Umd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="k9k-8U-cHn" firstAttribute="leading" secondItem="PNu-9O-sXx" secondAttribute="leading" id="68U-f9-nvm"/>
+                                    <constraint firstItem="k9k-8U-cHn" firstAttribute="top" secondItem="PNu-9O-sXx" secondAttribute="top" id="DzU-aW-8Il"/>
+                                    <constraint firstItem="k9k-8U-cHn" firstAttribute="centerX" secondItem="PNu-9O-sXx" secondAttribute="centerX" id="G1j-or-ZXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9k-8U-cHn" secondAttribute="trailing" id="Kti-cK-Yfa"/>
+                                    <constraint firstItem="k9k-8U-cHn" firstAttribute="centerY" secondItem="PNu-9O-sXx" secondAttribute="centerY" id="Lb9-9T-cCG"/>
+                                    <constraint firstAttribute="bottom" secondItem="k9k-8U-cHn" secondAttribute="bottom" id="Rb2-VE-mGS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="scr-o1-IYq" secondAttribute="trailing" constant="20" id="1Ga-ZC-dwb"/>
+                            <constraint firstItem="WTC-yF-6PG" firstAttribute="top" secondItem="PNu-9O-sXx" secondAttribute="bottom" id="bgg-4e-6w5"/>
+                            <constraint firstItem="WTC-yF-6PG" firstAttribute="top" secondItem="P64-gb-5q5" secondAttribute="bottom" constant="20" id="egC-3K-DjW"/>
+                            <constraint firstItem="PNu-9O-sXx" firstAttribute="leading" secondItem="bMc-qF-az0" secondAttribute="leadingMargin" constant="-20" id="lsy-If-ljY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PNu-9O-sXx" secondAttribute="trailing" constant="-20" id="ru1-0S-feX"/>
+                            <constraint firstAttribute="leading" secondItem="P64-gb-5q5" secondAttribute="leading" constant="-20" id="sMS-od-w1r"/>
+                            <constraint firstItem="WTC-yF-6PG" firstAttribute="top" secondItem="scr-o1-IYq" secondAttribute="bottom" constant="20" id="tMA-lh-Arn"/>
+                            <constraint firstItem="PNu-9O-sXx" firstAttribute="top" secondItem="QsD-yo-GRC" secondAttribute="bottom" id="zPg-cE-djF"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="L7Y-yO-aab" appends="YES" id="bo0-ZL-Mma"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="scr-o1-IYq" id="gji-h9-b1c"/>
+                        <outlet property="imageView" destination="k9k-8U-cHn" id="7ON-9L-DJK"/>
+                        <outlet property="scrollView" destination="PNu-9O-sXx" id="sLT-Iw-H4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sxK-VY-OAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="L7Y-yO-aab">
+                    <connections>
+                        <action selector="didSwipeDown:" destination="QdV-0F-a3S" id="cjB-3d-8HI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="297" y="1016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="closeButton" width="44" height="44"/>
+        <image name="shareButton" width="44" height="44"/>
+    </resources>
+    <color key="tintColor" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+</document>
