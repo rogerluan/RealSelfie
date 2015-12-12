@@ -1,7 +1,8 @@
-# Real Selfie - A WYSIWYG Camera
+<H1 align ="center">Real Selfie - A WYSIWYG Camera</H1>
 
-![Real Selfie Icon](Round-Icon.png)
-
+<p align="center">
+  <img src="Round-Icon.png" alt="Icon"/>
+</p>
 
 
 ##App Store Description
