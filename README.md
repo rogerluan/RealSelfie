@@ -41,7 +41,7 @@ There are three side effects when using Real Selfie:
 - While using _How The World Sees You_ config, you may notice it's strange how to camera will reflect your movements. This is completely normal, since it will not act like a real mirror.
 
 ##Learned Skills
-Like above state, I used to project mainly to learn some technical concepts myself. So far I've learned a quite few of them, and I intend to learn a few more as I walk along the road map.
+Like above state, I built this project mainly to learn some technical concepts myself. So far I've learned a quite few of them, and I intend to learn a few more as I walk along the road map.
 
 So far:
 
