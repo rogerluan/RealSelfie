@@ -85,7 +85,7 @@ These articles helped me learn fundamental MVVM knowledge and how to shrink my v
 [Don't Let Your UIViewController Think For Itself](http://blog.ios-developers.io/dont-let-your-uiviewcontroller-think-for-itself/)
 
 Thanks [@IanKeen](https://github.com/IanKeen) for the articles above!
-And thanks [@andysolomon]() for some design advices and tips!
+And thanks [@andysolomon](https://twitter.com/andysolomon) for some design advices and tips!
 
 I must also state that in the App Store screenshots I used someone's photo posted in [GregPC's 1000 Photos Project](https://www.flickr.com/photos/gregpc/albums), and I took the photo from [here](https://www.flickr.com/photos/gregpc/20380375058/in/album-72157629602035180/). Thanks a lot for offering that pic under CC 2.0 License! 
 
